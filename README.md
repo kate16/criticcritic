@@ -8,6 +8,6 @@ sample QC
 
 sample aggregated data
 input a spreadsheet of adjectives with their frequencies
-output a word cloud with the mot frequent words larger
+output a word cloud with the most frequent words larger
 
 
