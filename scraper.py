@@ -17,4 +17,4 @@ for politician in politicians:
 	soup = BeautifulSoup(response.text, 'html.parser')
 	urls = urls + [a.attrs.get('href') for a in soup.findAll('a', {'class' : 'entry-title-link'})]
 
-	urlfile.writerow(urls)
+urlfile.writerow(urls)
