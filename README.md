@@ -15,7 +15,7 @@ input - CSV file of adjectives
 output - word cloud of most frequent adjectives used
 
 where to find other things:
-flowchart - called flowchart
+flowchart - called flowchart.pdf
 raw data - a sample of the raw data called rawdata.csv
 screenshot of the hit - hit.png
 
