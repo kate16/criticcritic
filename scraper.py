@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 urlfile = csv.writer(open("rawdata.csv",'w'))
 
-politicians = ['obama','clinton','biden','bush','mccain','romney','palin','bloomeberg','rice','christie','michelle-obama']
+politicians = ['obama','clinton','biden','bush','mccain','romney','palin','bloomberg','rice','christie','michelle-obama']
 
 index_url = 'http://douthat.blogs.nytimes.com/?s='
 urls = []
