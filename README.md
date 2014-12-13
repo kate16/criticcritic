@@ -33,7 +33,7 @@ Raw URL collection - a sample of the raw data called rawdata.csv
 <br>
 HIT Screenshot - hit.png
 
-**WORDCLOUDS BRANCH**
+**WORDCLOUDS FOLDER**
 <br>
 Individual politician word clouds
 <br>
