@@ -38,6 +38,12 @@ HIT Screenshot - hit.png
 Individual politician word clouds
 <br>
 Gender grouped word clouds
+<br>
+Political party grouped word clouds
+
+**RAW FOLDER**
+<br> 
+Collection of csv data files from Crowdflower
 
 **Group Members**
 <br>
