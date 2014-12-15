@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("visualization", '1.1', {packages:['corechart']});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+          ['Type', 'Number of responses'],
+          ['Gibberish', 16],
+          ['Non-adjectives', 50],
+          ['Repeated Adjectives',  6],
+          ['Non-repeated Adjectives', 384],
+        ]);
+
+        var options = {
+          title: 'Types of responses'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+  }
+</script>
+<span id='piechart' style='width: 450px; display: inline-block'></span>
+</html>
