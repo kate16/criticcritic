@@ -1,0 +1,38 @@
+<!doctype HTML>
+<html>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("visualization", '1.1', {packages:['corechart']});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var expectedResponses = google.visualization.arrayToDataTable([
+      ['Politician', 'Percentage of Responses'],
+      ['Obama', 20], ['Clinton', 20],
+      ['Rubio', 20], ['Sotomayor', 20],
+      ['Boehner', 20]]);
+
+    var actualResponses = google.visualization.arrayToDataTable([
+      ['Politician', 'Percentage of Responses'],
+      ['Obama', 37], ['Clinton', 44],
+      ['Rubio', 16], ['Sotomayor', 18],
+      ['Boehner', 37]]);
+
+    var options = { pieSliceText: 'none' };
+
+    var chartBefore = new google.visualization.PieChart(document.getElementById('piechart_before'));
+    var chartAfter = new google.visualization.PieChart(document.getElementById('piechart_after'));
+    var chartDiff = new google.visualization.PieChart(document.getElementById('piechart_diff'));
+
+    chartBefore.draw(expectedResponses, options);
+    chartAfter.draw(actualResponses, options);
+
+    var diffData = chartDiff.computeDiff(expectedResponses, actualResponses);
+    chartDiff.draw(diffData, options);
+  }
+</script>
+<span id='piechart_before' style='width: 450px; display: inline-block'></span>
+<span id='piechart_after' style='width: 450px; display: inline-block'></span>
+<br>
+<span id='piechart_diff' style='width: 450px; position: absolute; left: 250px'></span>
+
+</html>
