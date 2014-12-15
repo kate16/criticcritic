@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+     google.load('visualization', '1', {'packages': ['geochart']});
+     google.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['City',   'Number of Quality Workers'],
+        ['Minoa', 1],
+['Fairfield', 1],
+['Miamisburg', 3],
+['Providence', 3],
+['Ironton', 1],
+['Pleasant Hill', 5],
+['Santa Ana', 3],
+['Phoenixville', 1],
+['Naples', 4],
+['Lakewood', 2],
+['Buffalo', 3],
+['Fremont', 4],
+['Fort Valley', 4],
+['Osseo', 3],
+['Brooklyn', 3],
+['New York', 14],
+['York', 2],
+['Cathedral City', 1],
+['Tampa', 3],
+['Colorado Springs', 3],
+['Miami', 1],
+['Saint Paul', 2],
+['New Tazewell', 3],
+['Mount Morris', 3],
+['Westfield', 2],
+['Pompano Beach', 3],
+['Revere', 1],
+['Carmel', 2],
+['Chatham', 2],
+['Clinton', 1],
+['Aiken', 1],
+['Taunton', 2],
+['Boston', 1],
+['Kingston', 5],
+['Lebanon', 3],
+['Bloomfield', 1],
+['San Rafael', 1],
+['Las Vegas', 5],
+['New Orleans', 1],
+['Lockport', 2],
+['Arlington Heights', 1],
+['Round Lake', 1],
+['Florence', 5],
+['Warsaw', 3]
+      ]);
+
+      var options = {
+        region: 'IT',
+        displayMode: 'markers',
+        colorAxis: {colors: ['green', 'blue']}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
