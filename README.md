@@ -45,6 +45,11 @@ Political party grouped word clouds
 <br> 
 Collection of csv data files from Crowdflower
 
+**GRAPH ANALYSIS FOLDER**
+Collection of graphs analysing different aspects of the project.
+<br>
+The first graph displays a geo chart of the city locations accepted HITs were from (to get a good sense of where worker quality is the best)
+
 **Group Members**
 <br>
 *Devesh Dayal*
